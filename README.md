@@ -15,7 +15,7 @@ I love [react-viewer](https://github.com/infeng/react-viewer). But, it's never b
 > react >= 18.0.0 | react-dom >= 18.0.0
 
 ```bash
-npm install image-viewer-react --save
+npm install image-viewer-component --save
 ```
 
 ## Usage

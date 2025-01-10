@@ -10,18 +10,18 @@
   --zIndex: 1000;
 }
 
-.image-viewer-react-inline {
+.image-viewer-component-inline {
   position: relative;
   width: 100%;
   height: 100%;
   min-height: 400px;
 }
 
-.image-viewer-react {
+.image-viewer-component {
   opacity: 0;
 }
 
-.image-viewer-react-mask {
+.image-viewer-component-mask {
   position: fixed;
   top: 0;
   right: 0;
@@ -32,16 +32,16 @@
   z-index: 1000;
 }
 
-.image-viewer-react-btn {
+.image-viewer-component-btn {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-.image-viewer-react-btn:hover {
+.image-viewer-component-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.image-viewer-react-close {
+.image-viewer-component-close {
   position: fixed;
   top: 0px;
   right: 0px;
@@ -53,12 +53,12 @@
   z-index: var(--zIndex) + 10;
 }
 
-.image-viewer-react-close > i {
+.image-viewer-component-close > i {
   position: relative;
   right: -12px;
 }
 
-.image-viewer-react-canvas {
+.image-viewer-component-canvas {
   position: fixed;
   top: 0;
   right: 0;
@@ -68,18 +68,18 @@
   z-index: var(--zIndex) + 5;
 }
 
-.image-viewer-react-canvas > img {
+.image-viewer-component-canvas > img {
   display: block;
   width: auto;
   height: auto;
   user-select: none;
 }
 
-.image-viewer-react-canvas > img.drag {
+.image-viewer-component-canvas > img.drag {
   cursor: move;
 }
 
-.image-viewer-react-footer {
+.image-viewer-component-footer {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -91,14 +91,14 @@
   max-height: 100lvh;
 }
 
-.image-viewer-react-inline > .image-viewer-react-mask,
-.image-viewer-react-inline > .image-viewer-react-close,
-.image-viewer-react-inline > .image-viewer-react-canvas,
-.image-viewer-react-inline > .image-viewer-react-footer {
+.image-viewer-component-inline > .image-viewer-component-mask,
+.image-viewer-component-inline > .image-viewer-component-close,
+.image-viewer-component-inline > .image-viewer-component-canvas,
+.image-viewer-component-inline > .image-viewer-component-footer {
   position: absolute;
 }
 
-.image-viewer-react-attribute {
+.image-viewer-component-attribute {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -106,14 +106,14 @@
   z-index: var(--zIndex) + 6;
 }
 
-.image-viewer-react-toolbar {
+.image-viewer-component-toolbar {
   overflow: hidden;
   height: 28px;
   margin-bottom: 6px !important;
   margin-top: 6px !important;
 }
 
-.image-viewer-react-toolbar li {
+.image-viewer-component-toolbar li {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -123,7 +123,7 @@
   line-height: 28px;
 }
 
-.image-viewer-react-toolbar li:hover {
+.image-viewer-component-toolbar li:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -132,18 +132,18 @@ li.empty {
   cursor: default;
 }
 
-.image-viewer-react-navbar {
+.image-viewer-component-navbar {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.image-viewer-react-list {
+.image-viewer-component-list {
   height: 50px;
   padding: 1px;
   text-align: left;
 }
 
-.image-viewer-react-list > li {
+.image-viewer-component-list > li {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -153,31 +153,31 @@ li.empty {
   object-fit: cover;
 }
 
-.image-viewer-react-list > li > img {
+.image-viewer-component-list > li > img {
   width: 50px;
   height: 50px;
   opacity: 0.5;
 }
 
-.image-viewer-react-list > li.active > img {
+.image-viewer-component-list > li.active > img {
   opacity: 1;
 }
 
-.image-viewer-react-transition {
+.image-viewer-component-transition {
   transition: opacity 0.3s ease-out;
 }
 
-.image-viewer-react-image-transition {
+.image-viewer-component-image-transition {
   transition-property: width, height, margin, transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 
-.image-viewer-react-list-transition {
+.image-viewer-component-list-transition {
   transition: margin 0.3s ease-out;
 }
 
-.image-viewer-react-icon {
+.image-viewer-component-icon {
   font-family: "Material Icons" !important;
   font-weight: normal;
   font-style: normal;
@@ -194,47 +194,47 @@ li.empty {
   font-feature-settings: "liga";
 }
 
-.image-viewer-react-icon-zoomIn:before {
+.image-viewer-component-icon-zoomIn:before {
   content: "zoom_in";
 }
 
-.image-viewer-react-icon-zoomOut:before {
+.image-viewer-component-icon-zoomOut:before {
   content: "zoom_out";
 }
 
-.image-viewer-react-icon-prev:before {
+.image-viewer-component-icon-prev:before {
   content: "navigate_before";
 }
 
-.image-viewer-react-icon-next:before {
+.image-viewer-component-icon-next:before {
   content: "navigate_next";
 }
 
-.image-viewer-react-icon-close:before {
+.image-viewer-component-icon-close:before {
   content: "close";
 }
 
-.image-viewer-react-icon-rotateLeft:before {
+.image-viewer-component-icon-rotateLeft:before {
   content: "rotate_left";
 }
 
-.image-viewer-react-icon-rotateRight:before {
+.image-viewer-component-icon-rotateRight:before {
   content: "rotate_right";
 }
 
-.image-viewer-react-icon-reset:before {
+.image-viewer-component-icon-reset:before {
   content: "autorenew";
 }
 
-.image-viewer-react-icon-scaleX:before {
+.image-viewer-component-icon-scaleX:before {
   content: "swap_horiz";
 }
 
-.image-viewer-react-icon-scaleY:before {
+.image-viewer-component-icon-scaleY:before {
   content: "swap_vert";
 }
 
-.image-viewer-react-icon-download:before {
+.image-viewer-component-icon-download:before {
   content: "download";
 }
 

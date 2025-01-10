@@ -721,7 +721,7 @@ export default function ViewerCore(props: ViewerProps) {
     }
   };
 
-  const prefixCls = "image-viewer-react";
+  const prefixCls = "image-viewer-component";
 
   let className = `${styles[prefixCls]} ${styles[`${prefixCls}-transition`]}`;
 

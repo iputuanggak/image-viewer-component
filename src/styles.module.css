@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/dist/fonts/customed-material-icons.woff2") format("woff2");
+  src: url("./fonts/customed-material-icons.woff2") format("woff2");
 }
 
 
@@ -27,7 +27,7 @@
   bottom: 0;
   background-color: rgba(55, 55, 55, 0.6);
   filter: alpha(opacity=50);
-  z-index: 1000px;
+  z-index: 1000;
 }
 
 .image-viewer-component-btn {
@@ -48,7 +48,7 @@
   height: 36px;
   border-radius: 0 0 0 40px;
   cursor: pointer;
-  z-index: 1010px;
+  z-index: 1010;
 }
 
 .image-viewer-component-close > i {
@@ -63,7 +63,7 @@
   left: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 1005px;
+  z-index: 1005;
 }
 
 .image-viewer-component-canvas > img {
@@ -84,7 +84,7 @@
   left: 0;
   overflow: hidden;
   text-align: center;
-  z-index: 1005px;
+  z-index: 1005;
   max-width: 100lvw;
   max-height: 100lvh;
 }
@@ -101,7 +101,7 @@
   top: 0px;
   left: 0px;
   opacity: 90%;
-  z-index: 1006px;
+  z-index: 1006;
 }
 
 .image-viewer-component-toolbar {

@@ -4,7 +4,7 @@ import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import dts from "rollup-plugin-dts";
-import url from "@rollup/plugin-url";
+import url from "postcss-url";
 import postcss from "rollup-plugin-postcss";
 import packageJson from "./package.json";
 
@@ -27,12 +27,14 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
-      postcss(),
-      url({
-        include: ['src/fonts/**/*.woff2'],
-        limit: 0,                 
-        destDir: 'dist/fonts/',  
-        publicPath: '/dist/fonts/', 
+      postcss({
+        plugins: [
+          url({
+            url: "inline",
+            maxSize: 10,
+            fallback: "copy",
+          }),
+        ],
       }),
     ],
     external: ["react", "react-dom", "react/jsx-runtime"],
@@ -45,6 +47,6 @@ export default [
       },
     ],
     plugins: [dts.default()],
-    external: [/\.css/],  
+    external: [/\.css/],
   },
 ];

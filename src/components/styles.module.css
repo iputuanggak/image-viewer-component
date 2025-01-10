@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/material-icons.woff2") format("woff2");
+}
+
+:root {
+  --zIndex: 1000;
+}
+
+.image-viewer-react-inline {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.image-viewer-react {
+  opacity: 0;
+}
+
+.image-viewer-react-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(55, 55, 55, 0.6);
+  filter: alpha(opacity=50);
+  z-index: 1000;
+}
+
+.image-viewer-react-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.image-viewer-react-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-viewer-react-close {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  border-radius: 0 0 0 40px;
+  cursor: pointer;
+  z-index: var(--zIndex) + 10;
+}
+
+.image-viewer-react-close > i {
+  position: relative;
+  right: -12px;
+}
+
+.image-viewer-react-canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: var(--zIndex) + 5;
+}
+
+.image-viewer-react-canvas > img {
+  display: block;
+  width: auto;
+  height: auto;
+  user-select: none;
+}
+
+.image-viewer-react-canvas > img.drag {
+  cursor: move;
+}
+
+.image-viewer-react-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: var(--zIndex) + 5;
+  max-width: 100lvw;
+  max-height: 100lvh;
+}
+
+.image-viewer-react-inline > .image-viewer-react-mask,
+.image-viewer-react-inline > .image-viewer-react-close,
+.image-viewer-react-inline > .image-viewer-react-canvas,
+.image-viewer-react-inline > .image-viewer-react-footer {
+  position: absolute;
+}
+
+.image-viewer-react-attribute {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 90%;
+  z-index: var(--zIndex) + 6;
+}
+
+.image-viewer-react-toolbar {
+  overflow: hidden;
+  height: 28px;
+  margin-bottom: 6px !important;
+  margin-top: 6px !important;
+}
+
+.image-viewer-react-toolbar li {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  margin-right: 8px;
+  cursor: pointer;
+  line-height: 28px;
+}
+
+.image-viewer-react-toolbar li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+li.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.image-viewer-react-navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-viewer-react-list {
+  height: 50px;
+  padding: 1px;
+  text-align: left;
+}
+
+.image-viewer-react-list > li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 1px;
+  object-fit: cover;
+}
+
+.image-viewer-react-list > li > img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.image-viewer-react-list > li.active > img {
+  opacity: 1;
+}
+
+.image-viewer-react-transition {
+  transition: opacity 0.3s ease-out;
+}
+
+.image-viewer-react-image-transition {
+  transition-property: width, height, margin, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.image-viewer-react-list-transition {
+  transition: margin 0.3s ease-out;
+}
+
+.image-viewer-react-icon {
+  font-family: "Material Icons" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+.image-viewer-react-icon-zoomIn:before {
+  content: "zoom_in";
+}
+
+.image-viewer-react-icon-zoomOut:before {
+  content: "zoom_out";
+}
+
+.image-viewer-react-icon-prev:before {
+  content: "navigate_before";
+}
+
+.image-viewer-react-icon-next:before {
+  content: "navigate_next";
+}
+
+.image-viewer-react-icon-close:before {
+  content: "close";
+}
+
+.image-viewer-react-icon-rotateLeft:before {
+  content: "rotate_left";
+}
+
+.image-viewer-react-icon-rotateRight:before {
+  content: "rotate_right";
+}
+
+.image-viewer-react-icon-reset:before {
+  content: "autorenew";
+}
+
+.image-viewer-react-icon-scaleX:before {
+  content: "swap_horiz";
+}
+
+.image-viewer-react-icon-scaleY:before {
+  content: "swap_vert";
+}
+
+.image-viewer-react-icon-download:before {
+  content: "download";
+}
+
+.circle-loading {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #fff;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

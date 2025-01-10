@@ -3,12 +3,10 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/edited-material-icons.woff2") format("woff2");
+  src: url("/dist/fonts/customed-material-icons.woff2") format("woff2");
 }
 
-:root {
-  --zIndex: 1000;
-}
+
 
 .image-viewer-component-inline {
   position: relative;
@@ -29,7 +27,7 @@
   bottom: 0;
   background-color: rgba(55, 55, 55, 0.6);
   filter: alpha(opacity=50);
-  z-index: 1000;
+  z-index: 1000px;
 }
 
 .image-viewer-component-btn {
@@ -50,7 +48,7 @@
   height: 36px;
   border-radius: 0 0 0 40px;
   cursor: pointer;
-  z-index: var(--zIndex) + 10;
+  z-index: 1010px;
 }
 
 .image-viewer-component-close > i {
@@ -65,7 +63,7 @@
   left: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: var(--zIndex) + 5;
+  z-index: 1005px;
 }
 
 .image-viewer-component-canvas > img {
@@ -86,7 +84,7 @@
   left: 0;
   overflow: hidden;
   text-align: center;
-  z-index: var(--zIndex) + 5;
+  z-index: 1005px;
   max-width: 100lvw;
   max-height: 100lvh;
 }
@@ -103,7 +101,7 @@
   top: 0px;
   left: 0px;
   opacity: 90%;
-  z-index: var(--zIndex) + 6;
+  z-index: 1006px;
 }
 
 .image-viewer-component-toolbar {
@@ -195,47 +193,47 @@ li.empty {
 }
 
 .image-viewer-component-icon-zoomIn:before {
-  content: "zoom_in";
+  content: "\e8ff";
 }
 
 .image-viewer-component-icon-zoomOut:before {
-  content: "zoom_out";
+  content: "\e900";
 }
 
 .image-viewer-component-icon-prev:before {
-  content: "navigate_before";
+  content: "\e408";
 }
 
 .image-viewer-component-icon-next:before {
-  content: "navigate_next";
+  content: "\e409";
 }
 
 .image-viewer-component-icon-close:before {
-  content: "close";
+  content: "\e5cd";
 }
 
 .image-viewer-component-icon-rotateLeft:before {
-  content: "rotate_left";
+  content: "\e419";
 }
 
 .image-viewer-component-icon-rotateRight:before {
-  content: "rotate_right";
+  content: "\e41a";
 }
 
 .image-viewer-component-icon-reset:before {
-  content: "autorenew";
+  content: "\e863";
 }
 
 .image-viewer-component-icon-scaleX:before {
-  content: "swap_horiz";
+  content: "\e8d4";
 }
 
 .image-viewer-component-icon-scaleY:before {
-  content: "swap_vert";
+  content: "\e8d5";
 }
 
 .image-viewer-component-icon-download:before {
-  content: "download";
+  content: "\e2c4";
 }
 
 .circle-loading {

@@ -116,7 +116,7 @@
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  margin-right: 8px;
+  margin-right: 6px;
   cursor: pointer;
   line-height: 28px;
 }
@@ -225,11 +225,11 @@ li.empty {
 }
 
 .image-viewer-component-icon-scaleX:before {
-  content: "\e8d5";
+  content: "\e8d4";
 }
 
 .image-viewer-component-icon-scaleY:before {
-  content: "\e8d4";
+  content: "\e8d5";
 }
 
 .image-viewer-component-icon-download:before {

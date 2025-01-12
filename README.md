@@ -1,7 +1,7 @@
 
 ## Introduction
 
-I love [react-viewer](https://github.com/infeng/react-viewer). But, it's never been updated for 5 years. So, I decided to do some adjustment (many), such as:
+I love [react-viewer](https://github.com/infeng/react-viewer). But, it hasn't been updated for 5 years, and the UI needs to be revamped. So, I decided to do some adjustment (many), such as:
 * update the react version. 16 -> 18
 * adjust the code for typescript update
 * add props for image description. It's not image alt

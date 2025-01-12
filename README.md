@@ -1,13 +1,16 @@
 
 ## Introduction
 
-I love [react-viewer](https://github.com/infeng/react-viewer). But, it hasn't been updated for 5 years, and the UI needs to be revamped. So, I decided to do some adjustment (many), such as:
+I love [react-viewer](https://github.com/infeng/react-viewer). The reason because I can do unlimited zoom, that's amazing!
+But, it hasn't been updated for 5 years and the UI needs to be revamped. 
+So, I decided to do some adjustment (many), such as:
 * update the react version. 16 -> 18
 * adjust the code for typescript update
 * add props for image description. It's not image alt
 * add and improve touch support from [KittenApps](https://github.com/infeng/react-viewer/pull/159)
 * replace all icons with [Material Symbol](https://fonts.google.com/icons) from Google
 * change layout 
+* 0 dependencies and 13 dev dependecies (75% fewer than the original)
 
 
 ## Installation

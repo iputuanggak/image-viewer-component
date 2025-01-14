@@ -12,6 +12,8 @@ So, I decided to do some adjustment (many), such as:
 * change layout 
 * 0 dependencies and 13 dev dependecies (75% fewer than the original)
 
+[Demo Link](https://putu-angga.vercel.app/demo/image-viewer-component)
+
 
 ## Installation
 
@@ -24,7 +26,7 @@ npm install image-viewer-component --save
 ## Usage
 
 ```javascript
-import Viewer from 'react-viewer';
+import Viewer from 'image-viewer-component';
 
 function App() {
   const [ visible, setVisible ] = useState(false);

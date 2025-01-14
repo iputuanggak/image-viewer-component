@@ -792,7 +792,7 @@ export default function ViewerCore(props: ViewerProps) {
         showTotal={showTotal}
         width={state.imageWidth}
         height={state.imageHeight}
-        activeIndex={0}
+        activeIndex={state.activeIndex || 0}
         totalName={totalName}
         count={images.length}
       />

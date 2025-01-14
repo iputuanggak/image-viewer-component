@@ -1,6 +1,6 @@
 {
   "name": "image-viewer-component",
-  "version": "1.0.0",
+  "version": "1.0.16",
   "description": "Component to see image with unlimited zoom",
   "license": "MIT",
   "author": "putuangga",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/iputuanggak/image-viewer-component.git"
   },
+  "homepage": "https://github.com/iputuanggak/image-viewer-component#readme",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
